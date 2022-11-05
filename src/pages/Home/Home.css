@@ -1,0 +1,25 @@
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.main a {
+    color: purple;
+}
+
+.main a:hover {
+    color: var(--yellowish);
+}
+
+.card__body {
+    padding: 10px;
+}
+
+@media(max-width: 768px){
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
